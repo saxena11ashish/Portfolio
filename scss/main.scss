@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
+
 * {
     box-sizing: border-box;
 }
@@ -116,5 +116,8 @@ main {
     background: darken($primary-color,10);
     color: set-text-color($primary-color);
 
-    // Sticky Footer    
+    // For Sticky Footer adjust the height of element above footer  
 }
+
+
+@import 'mobile'; //stays at bottom, so that media queries run after initial CSS
