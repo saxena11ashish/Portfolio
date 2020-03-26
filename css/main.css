@@ -193,21 +193,29 @@ main {
       border-color: #eece1a; }
 
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
+  display: grid;
+  grid-template-areas: 'email phone location';
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center; }
   .boxes div {
-    font-size: 2rem;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     border: 3px #fff solid;
     transition: all 0.5s ease-out; }
+    .boxes div#email {
+      grid-area: email; }
+    .boxes div#phone {
+      grid-area: phone; }
+    .boxes div#location {
+      grid-area: location; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #eece1a;
-      color: #000; }
+      background-color: #eece1a;
+      color: #000;
+      box-shadow: #eece1a 0 0 20px;
+      border-radius: 10px; }
       .boxes div:hover span {
         color: #000; }
 
@@ -273,10 +281,16 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes {
+    grid-template-areas: 'email' 'phone' 'location';
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
+    grid-template-columns: 1fr; }
+  .boxes {
+    grid-template-areas: 'email' 'phone' 'location';
     grid-template-columns: 1fr; } }
