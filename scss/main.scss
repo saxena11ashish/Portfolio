@@ -110,6 +110,47 @@ main {
     }
 }        
 
+// Work/Projects
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.8rem;
+    
+    img {
+        width: 100%;
+        border: solid 3px #fff;
+
+        &:hover {
+            opacity: 0.5;
+            @include easeOut;
+            border-color: $secondary-color;
+        }
+    }
+}
+
+// Button styles
+.btn {
+    display: block;
+    border: 0;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.3rem;
+    &:hover {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+    }
+}   //btn is not defined in html, but we will extend this class to create btn-dark and btn-light class
+
+.btn-dark {
+    @extend .btn;
+    background: darken($primary-color,50);
+    color: #fff;
+}
+.btn-light {
+    @extend .btn;
+    background: lighten($primary-color,50);
+    color: #000;
+}
+
 #main-footer {
     text-align: center;
     padding: 1rem;
