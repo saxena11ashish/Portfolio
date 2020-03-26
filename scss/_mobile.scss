@@ -90,5 +90,9 @@
         'phone'
         'location';
         grid-template-columns: 1fr;
+        div{
+            margin-left:10px;
+            margin-right:10px;
+        }
     }
 }
