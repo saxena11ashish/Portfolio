@@ -195,16 +195,16 @@ main {
 .boxes {
   display: grid;
   grid-template-areas: 'email phone location';
-  grid-gap: 20px;
+  grid-gap: 0.8rem;
   grid-template-columns: repeat(3, 1fr);
   font-size: 1.5rem;
   text-align: center;
   justify-content: center; }
   .boxes div {
+    width: 100%;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    border: 3px #fff solid;
-    transition: all 0.5s ease-out; }
+    border: 3px #fff solid; }
     .boxes div#email {
       grid-area: email; }
     .boxes div#phone {
@@ -212,6 +212,7 @@ main {
     .boxes div#location {
       grid-area: location; }
     .boxes div:hover {
+      transition: all 0.5s ease-out;
       background-color: #eece1a;
       color: #000;
       box-shadow: #eece1a 0 0 20px;
@@ -293,4 +294,7 @@ main {
     grid-template-columns: 1fr; }
   .boxes {
     grid-template-areas: 'email' 'phone' 'location';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+    .boxes div {
+      margin-left: 10px;
+      margin-right: 10px; } }

@@ -147,12 +147,15 @@ main {
     display:grid;
     grid-template-areas: 
         'email phone location';
+    grid-gap: 0.8rem;
+    
 
     grid-template-columns: repeat(3, 1fr);
     font-size: 1.5rem;
     text-align: center;
     justify-content: center;
     div{
+        width: 100%;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;
         border: 3px #fff solid;
@@ -165,9 +168,9 @@ main {
         }
         &#location{
             grid-area: location;
-        }
-        @include easeOut;
+        }        
         &:hover{
+            @include easeOut;
             background-color: $secondary-color;
             color:set-text-color($secondary-color);
             span{
