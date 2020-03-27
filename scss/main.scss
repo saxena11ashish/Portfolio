@@ -130,45 +130,16 @@ main {
 
 //Contact Page
 .boxes {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-evenly;
-    // align-items: center; 
-    // margin-top: 1rem;
-
-    // div{
-    //     font-size: 2rem;
-    //     padding: 1.5rem 2.5rem;
-    //     margin-bottom: 3rem;
-    //     border: 3px #fff solid;
-    //     @include easeOut;
-
-    // }
-    display:grid;
-    grid-template-areas: 
-        'email phone location';
-    grid-gap: 0.8rem;
-    
-
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.8rem;
     font-size: 1.5rem;
     text-align: center;
     justify-content: center;
     div{
         width: 100%;
-        padding: 1.5rem 2.5rem;
-        margin-bottom: 3rem;
-        border: 3px #fff solid;
-        
-        &#email{
-            grid-area: email;
-        }
-        &#phone{
-            grid-area: phone;
-        }
-        &#location{
-            grid-area: location;
-        }        
+        border: solid 3px #fff;
+        padding: 1.5rem 2.5rem;        
         &:hover{
             @include easeOut;
             background-color: $secondary-color;
