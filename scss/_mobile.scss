@@ -89,4 +89,9 @@
     .boxes {
         grid-template-columns: 1fr;
     }
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0.7rem;
+    }
 }
