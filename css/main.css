@@ -1,3 +1,10 @@
+/*
+    66fcf1
+    ffcb9a
+    e98074
+    86c232
+    faed26
+*/
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -15,12 +22,12 @@
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
-      background: #eece1a; }
+      background: #66fcf1; }
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px);
-      background: #eece1a; }
+      background: #66fcf1; }
 
 .menu {
   position: fixed;
@@ -41,14 +48,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(55, 55, 55, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(68, 68, 68, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -59,7 +66,7 @@
       background: url("../img/portrait.jpg");
       background-size: cover;
       border-radius: 50%;
-      border: #eece1a 3px solid;
+      border: #66fcf1 3px solid;
       opacity: 1; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -67,7 +74,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #66fcf1; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -79,7 +86,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #66fcf1; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -97,7 +104,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #000;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -114,7 +121,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(68, 68, 68, 0.9);
+      background: rgba(0, 0, 0, 0.9);
       z-index: -1; }
 
 h1, h2, h3 {
@@ -125,7 +132,7 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background-color: rgba(73, 73, 73, 0.5); }
+    background-color: rgba(5, 5, 5, 0.5); }
 
 a {
   color: #fff;
@@ -137,7 +144,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #66fcf1; }
 
 main {
   padding: 4rem;
@@ -147,7 +154,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #66fcf1;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -165,7 +172,7 @@ main {
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    border: 3px solid #eece1a; }
+    border: 3px solid #66fcf1; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -176,11 +183,11 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
+    background: #0d0d0d;
     padding: 0.5rem;
-    border-bottom: 5px solid #eece1a; }
+    border-bottom: 5px solid #66fcf1; }
     .about-info .job h2, .about-info .job h4 {
-      color: #eece1a;
+      color: #66fcf1;
       text-align: center;
       margin-bottom: 0rem; }
 
@@ -194,7 +201,7 @@ main {
     .projects img:hover {
       opacity: 0.5;
       transition: all 0.5s ease-out;
-      border-color: #eece1a; }
+      border-color: #66fcf1; }
 
 .boxes {
   display: grid;
@@ -209,9 +216,9 @@ main {
     padding: 1.5rem 2.5rem; }
     .boxes div:hover {
       transition: all 0.5s ease-out;
-      background-color: #eece1a;
+      background-color: #66fcf1;
       color: #000;
-      box-shadow: #eece1a 0 0 20px;
+      box-shadow: #66fcf1 0 0 20px;
       border-radius: 10px; }
       .boxes div:hover span {
         color: #000; }
@@ -222,7 +229,7 @@ main {
   padding: 0.5rem 1rem;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #66fcf1;
     color: #000; }
 
 .btn-dark {
@@ -230,13 +237,13 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: gray;
   color: #000; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: black;
   color: #fff; }
 
 @media screen and (min-width: 1171px) {
