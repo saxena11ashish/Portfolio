@@ -91,7 +91,20 @@
     }
     .icons {
         display: grid;
+        grid-template-areas: 
+            'link1'
+            'link2'
+            'link3' ;
         grid-template-columns: 1fr;
+        .icon1{
+            grid-area: link1; 
+        }
+        .icon2{
+            grid-area: link2; 
+        }
+        .icon3{
+            grid-area: link3; 
+        }
         grid-gap: 0.7rem;
     }
 }

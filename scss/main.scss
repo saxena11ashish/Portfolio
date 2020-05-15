@@ -54,8 +54,6 @@ main {
     min-height: calc(100vh - 60px);
     .icons{
         margin-top: 1rem;
-        // display: grid;
-        // grid-template-areas: 'link1 link2 link3';
         a {
             padding: 0.4rem;
             
@@ -64,15 +62,6 @@ main {
                 @include easeOut;
             }
         }
-        // .icon1{
-        //     grid-area: link1; 
-        // }
-        // .icon2{
-        //     grid-area: link2; 
-        // }
-        // .icon3{
-        //     grid-area: link3; 
-        // }
     }
 
     &#home{
