@@ -1,2 +1,2 @@
 # Portfolio
-Portfolio Site using Html, Sass, Vanilla-JS_______________________________________________________________________________________________________________________________________
+Portfolio Site using Html, Sass, Vanilla-JS
